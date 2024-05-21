@@ -1,0 +1,7 @@
+- name: Download the installer
+  ansible.builtin.get_url:
+    url: https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py
+    dest: /tmp/platformio.py
+
+- name: Install Platformio
+  ansible.builtin.command: python3 /tmp/platformio.py

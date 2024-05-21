@@ -28,6 +28,9 @@ else
 	echo -e "=== JQ already installed, skipping"
 fi
 
+sudo apt install -y python3-venv
+
+
 echo -e "=== Setting up SSH Keys"
 if [ ! -f $HOME/.ssh/*.pub ]
 then
