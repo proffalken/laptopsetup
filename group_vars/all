@@ -1,0 +1,1 @@
+home: "{{ lookup('ansible.builtin.env', 'HOME') }}"

@@ -1,0 +1,8 @@
+- name: Install and configure the laptop
+  hosts: localhost
+  tasks:
+    - name: Ping hosts
+      ansible.builtin.ping:
+
+  roles:
+    - role: vim
